@@ -11,7 +11,7 @@ const Navigation: React.FC = (): React.ReactElement => {
       <button className="transition hover:opacity-70">
         {/* <UserIcon /> */}
         <img
-          src="/assets/img/profile-pictures/11.jpg"
+          src="/img/profile-pictures/11.jpg"
           alt="user's picture"
           className="rounded-full w-7 h-7 ring-1 ring-gray-800 p-0.5"
         />

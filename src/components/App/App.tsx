@@ -33,12 +33,12 @@ const CheckSize = (): React.ReactElement | null => {
 
 const App: React.FC = () => {
   const [stories, setStories] = useState<StoriesComponentItem[]>([
-    { profile_picture: '/assets/img/profile-pictures/1.jpeg', username: 'hele_dan_dan_dan_hele_yedane_yedane', seen: false, },
-    { profile_picture: '/assets/img/profile-pictures/3.jpeg', username: 'pishi', seen: false, },
-    { profile_picture: '/assets/img/profile-pictures/19.png', username: 'kimi', seen: false, },
-    { profile_picture: '/assets/img/profile-pictures/11.jpg', username: 'DibDmini', seen: true, },
-    { profile_picture: '/assets/img/profile-pictures/34.jpeg', username: 'khaaapooooo', seen: true, },
-    // { profile_picture: '/assets/img/profile-pictures/29.png', username: 'anoo', seen: true, },
+    { profile_picture: '/img/profile-pictures/1.jpeg', username: 'hele_dan_dan_dan_hele_yedane_yedane', seen: false, },
+    { profile_picture: '/img/profile-pictures/3.jpeg', username: 'pishi', seen: false, },
+    { profile_picture: '/img/profile-pictures/19.png', username: 'kimi', seen: false, },
+    { profile_picture: '/img/profile-pictures/11.jpg', username: 'DibDmini', seen: true, },
+    { profile_picture: '/img/profile-pictures/34.jpeg', username: 'khaaapooooo', seen: true, },
+    // { profile_picture: '/img/profile-pictures/29.png', username: 'anoo', seen: true, },
   ])
   
   const [userStory, setUserStory] = useState<StoriesComponentItem>({
@@ -49,10 +49,10 @@ const App: React.FC = () => {
 
   const [posts, setPosts] = useState<Array<PostDetails>>([
     {
-      profile: { profile_picture: '/assets/img/profile-pictures/1.jpeg', username: 'hele_dan_dan_dan_hele_yedane_yedane', seen: false, is_post: true, },
+      profile: { profile_picture: '/img/profile-pictures/1.jpeg', username: 'hele_dan_dan_dan_hele_yedane_yedane', seen: false, is_post: true, },
       location: 'Iran, Inja',
       media: {
-        media_url: '/assets/img/profile-pictures/1.jpeg',
+        media_url: '/img/profile-pictures/1.jpeg',
         post_type: 'picture',
       },
       description: 'ajksndkaj sndkajs ndaskd asdjasdmaisudhmaisudh mais mi h hjh njn jknkasd asdasd.',
@@ -61,10 +61,10 @@ const App: React.FC = () => {
       is_bookmarked: false,
       comments_count: 0,
     }, {
-      profile: { profile_picture: '/assets/img/profile-pictures/34.jpeg', username: 'khaaapooooo', seen: true, is_post: true, },
+      profile: { profile_picture: '/img/profile-pictures/34.jpeg', username: 'khaaapooooo', seen: true, is_post: true, },
       location: 'Unja, Anja',
       media: {
-        media_url: '/assets/img/profile-pictures/34.jpeg',
+        media_url: '/img/profile-pictures/34.jpeg',
         post_type: 'picture',
       },
       description: 'ajksndkaj sndkajs ndaskd asdjasdmaisudhmaisudh mais mi h hjh njn jknkasd asdasd ajksndkaj sndkajs ndaskd asdjasdmaisudhmaisudh mais mi h hjh njn jknkasd asdasd ajksndkaj sndkajs ndaskd asdjasdmaisudhmaisudh mais mi h hjh njn jknkasd asdasd\n\najksndkaj sndkajs ndaskd asdjasdmaisudhmaisudh mais mi h hjh njn jknkasd asdasd\najksndkaj sndkajs ndaskd asdjasdmaisudhmaisudh mais mi h hjh njn jknkasd asdasd\n\n\nGood luck..',
