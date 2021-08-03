@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import logo from "../../logo.svg"
 import { PostDetails, PostsProps, StoriesComponentItem } from "../../types"
+import Navigation from "../Navigation"
 import Posts from "../Posts"
 import Stories from "../Stories"
 import TopBar from "../TopBar"
@@ -80,6 +81,7 @@ const App: React.FC = () => {
       <TopBar unreadMessagesCount={1} />
       <Stories stories={stories} userStory={userStory} />
       <Posts posts={posts} />
+      <Navigation />
     </div>
   )
 }

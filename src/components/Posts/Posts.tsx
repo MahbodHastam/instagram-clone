@@ -5,7 +5,7 @@ import { Post } from '../Post/Post'
 const Posts: React.FC<PostsProps> = ({ posts }: PostsProps): React.ReactElement => {
 
   return (
-    <div>
+    <div className="pb-10">
       {posts.map((item, key) => <Post {...item} key={key} />)}
     </div>
   )
