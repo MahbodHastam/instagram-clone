@@ -1,6 +1,6 @@
 import React from 'react'
 import { PostsProps } from '../../types'
-import { Post } from '../Post/Post'
+import Post from '../Post'
 
 const Posts: React.FC<PostsProps> = ({ posts }: PostsProps): React.ReactElement => {
 
