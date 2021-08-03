@@ -14,7 +14,7 @@ const ProfilePicture: React.FC<ProfilePictureProps> = ({
       key={profile.username}
     >
       <div
-        className={`${profile.is_post ? 'p-0.5 mx-2' : 'p-1'} rounded-full transition-all hover:opacity-90 bg-gradient-to-br 
+        className={`${profile.is_post ? 'p-0.5 mx-2' : 'p-0.5'} rounded-full transition-all hover:opacity-90 bg-gradient-to-br 
         ${
           profile.seen
             ? `from-gray-100 via-gray-300 to-gray-400`
@@ -22,7 +22,7 @@ const ProfilePicture: React.FC<ProfilePictureProps> = ({
         }
         `}
       >
-        <a href="#" className={`bg-white rounded-full block`}>
+        <a href="#" className={`bg-white rounded-full block p-0.5`}>
           <img
             src={profile.profile_picture}
             alt={`${profile.username}'s profile picture`}

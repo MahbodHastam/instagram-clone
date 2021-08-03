@@ -1,5 +1,4 @@
-import { InboxIcon } from '@heroicons/react/outline'
-import { CameraIcon } from '@heroicons/react/solid'
+import { InboxIcon, CameraIcon } from '@heroicons/react/outline'
 import React from 'react'
 import { TopBarProps } from '../../types'
 
