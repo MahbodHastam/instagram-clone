@@ -6,7 +6,7 @@ import Posts from "../Posts"
 import Stories from "../Stories"
 import TopBar from "../TopBar"
 
-const maxWidth = 375
+/* const maxWidth = 375
 
 const CheckSize = (): React.ReactElement | null => {
   const [innerWidth, setInnerWidth] = useState(0)
@@ -29,7 +29,7 @@ const CheckSize = (): React.ReactElement | null => {
       </span>
     </div>
   ) : null
-}
+} */
 
 const App: React.FC = () => {
   const [stories, setStories] = useState<StoriesComponentItem[]>([
@@ -76,9 +76,9 @@ const App: React.FC = () => {
   ])
 
   return (
-    <div className="app">
-      <CheckSize />
-      <TopBar unreadMessagesCount={1} />
+    <div className="app bg-gray-50">
+      {/* <CheckSize /> */}
+      <TopBar unreadMessagesCount={0} />
       <Stories stories={stories} userStory={userStory} />
       <Posts posts={posts} />
       <Navigation />

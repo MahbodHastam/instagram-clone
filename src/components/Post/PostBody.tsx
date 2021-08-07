@@ -12,7 +12,7 @@ const PostBody: React.FC<PostDetails> = (
         <img
           src={props.media.media_url}
           alt={props.profile.username}
-          className={`w-full h-2/4`}
+          className={`w-full h-96 md:rounded`}
         />
       ) : (
         <span>it's video</span>

@@ -24,3 +24,11 @@ svg {
   height: 24px;
   width: 24px;
 }
+
+.navigation-button {
+  @apply transition;
+}
+
+.navigation-button:hover {
+  @apply opacity-70;
+}

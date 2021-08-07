@@ -4,12 +4,11 @@ import { HomeIcon, SearchIcon, HeartIcon, UserIcon, PlusIcon } from '@heroicons/
 const Navigation: React.FC = (): React.ReactElement => {
   return (
     <div className="w-full fixed inset-x-0 bottom-0 bg-gray-50 py-3 px-4 border-t border-gray-200 flex flex-row justify-between">
-      <button className="transition hover:opacity-70"><HomeIcon /></button>
-      <button className="transition hover:opacity-70"><SearchIcon /></button>
-      <button className="transition rounded-lg border-2 border-gray-900 text-gray-900 bg-white hover:opacity-70"><PlusIcon className="h-6 w-6" /></button>
-      <button className="transition hover:opacity-70"><HeartIcon /></button>
-      <button className="transition hover:opacity-70">
-        {/* <UserIcon /> */}
+      <button className="navigation-button"><HomeIcon /></button>
+      <button className="navigation-button"><SearchIcon /></button>
+      <button className="navigation-button rounded-lg border-2 border-gray-900 text-gray-900 bg-white"><PlusIcon className="h-6 w-6" /></button>
+      <button className="navigation-button"><HeartIcon /></button>
+      <button className="navigation-button">
         <img
           src="/img/profile-pictures/11.jpg"
           alt="user's picture"
