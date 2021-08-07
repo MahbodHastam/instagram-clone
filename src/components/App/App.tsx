@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import logo from "../../logo.svg"
 import { PostDetails, PostsProps, StoriesComponentItem } from "../../types"
+import { useSelector } from 'react-redux'
 import Navigation from "../Navigation"
 import Posts from "../Posts"
 import Stories from "../Stories"
@@ -32,15 +33,9 @@ const CheckSize = (): React.ReactElement | null => {
 } */
 
 const App: React.FC = () => {
-  const [stories, setStories] = useState<StoriesComponentItem[]>([
-    { profile_picture: '/img/profile-pictures/1.jpeg', username: 'hele_dan_dan_dan_hele_yedane_yedane', seen: false, },
-    { profile_picture: '/img/profile-pictures/3.jpeg', username: 'pishi', seen: false, },
-    { profile_picture: '/img/profile-pictures/19.png', username: 'kimi', seen: false, },
-    { profile_picture: '/img/profile-pictures/11.jpg', username: 'DibDmini', seen: true, },
-    { profile_picture: '/img/profile-pictures/34.jpeg', username: 'khaaapooooo', seen: true, },
-    // { profile_picture: '/img/profile-pictures/29.png', username: 'anoo', seen: true, },
-  ])
-  
+
+  const stories = useSelector((state: any) => state.stories.data)
+    
   const [userStory, setUserStory] = useState<StoriesComponentItem>({
     profile_picture: logo,
     username: 'Your Story',
@@ -74,7 +69,7 @@ const App: React.FC = () => {
       comments_count: 2,
     }
   ])
-
+  
   return (
     <div className="app bg-gray-50">
       {/* <CheckSize /> */}

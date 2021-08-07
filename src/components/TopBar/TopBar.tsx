@@ -1,4 +1,4 @@
-import { InboxIcon, CameraIcon } from '@heroicons/react/outline'
+import { ChatIcon, CameraIcon } from '@heroicons/react/outline'
 import React from 'react'
 import { TopBarProps } from '../../types'
 
@@ -17,7 +17,7 @@ const TopBar: React.FC<TopBarProps> = ({
       </h3>
       <button className="relative inline-block transition text-gray-800 hover:opacity-70">
         {/* <i className="bx bx-message-alt-detail text-3xl"></i> */}
-        <InboxIcon />
+        <ChatIcon />
         {unreadMessagesCount !== 0 || unreadMessagesCount === null ? (
           <span className="rounded-full animate-pulse bg-red-600 text-white bg-opacity-95 px-2 py-1 text-xs leading-none absolute -top-1 -left-1">
             {unreadMessagesCount}

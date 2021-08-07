@@ -36,3 +36,8 @@ export interface PostDetails extends PostProfileProps {
 export interface PostsProps {
   posts: Array<PostDetails>
 }
+
+export interface ReducerProps {
+  type: string
+  payload: any
+}
