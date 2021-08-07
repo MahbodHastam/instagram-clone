@@ -34,7 +34,7 @@ const CheckSize = (): React.ReactElement | null => {
 
 const App: React.FC = () => {
 
-  const stories = useSelector((state: any) => state.stories.data)
+  const stories: StoriesComponentItem[] = useSelector((state: any) => state.stories.data)
     
   const [userStory, setUserStory] = useState<StoriesComponentItem>({
     profile_picture: logo,
