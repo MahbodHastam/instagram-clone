@@ -1,6 +1,6 @@
 import { ChatIcon, CameraIcon } from '@heroicons/react/outline'
 import React from 'react'
-import { TopBarProps } from '../../types'
+import { TopBarProps } from './types'
 
 const TopBar: React.FC<TopBarProps> = ({
   unreadMessagesCount = 0,

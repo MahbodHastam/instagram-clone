@@ -1,6 +1,5 @@
 import React from "react"
-import { StoriesComponentItem, StoriesComponentProps } from "../../types"
-import logo from "../../logo.svg"
+import { StoriesComponentItem, StoriesComponentProps } from './types'
 import ProfilePicture from "../ProfilePicture/ProfilePicture"
 
 const Stories: React.FC<StoriesComponentProps> = ({

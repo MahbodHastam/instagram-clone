@@ -1,5 +1,5 @@
 import React from "react"
-import { StoriesComponentItem } from "../../types"
+import { StoriesComponentItem } from "../Stories/types"
 
 type ProfilePictureProps = {
   profile: StoriesComponentItem

@@ -1,5 +1,5 @@
 import React from "react"
-import { PostDetails } from "../../types"
+import { PostDetails } from "./types"
 import { ChatIcon, ExternalLinkIcon, HeartIcon, BookmarkIcon } from '@heroicons/react/outline'
 import { HeartIcon as HeartIconSolid, BookmarkIcon as BookmarkIconSolid } from '@heroicons/react/solid'
 

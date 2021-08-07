@@ -1,5 +1,5 @@
 import React from 'react'
-import { PostDetails } from '../../types'
+import { PostDetails } from './types'
 import ProfilePicture from '../ProfilePicture'
 import PostBody from './PostBody'
 

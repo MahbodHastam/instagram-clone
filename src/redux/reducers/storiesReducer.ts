@@ -1,5 +1,5 @@
 import { STORIES_GET_ALL } from "../../constants/ActionTypes"
-import { ReducerProps } from "../../types"
+import { ReducerProps } from "../../constants/types"
 
 const initialState = {
   data: [

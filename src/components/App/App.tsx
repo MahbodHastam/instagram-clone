@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react"
 import logo from "../../logo.svg"
-import { PostDetails, PostsProps, StoriesComponentItem } from "../../types"
 import { useSelector } from 'react-redux'
 import Navigation from "../Navigation"
 import Posts from "../Posts"
 import Stories from "../Stories"
 import TopBar from "../TopBar"
+import { StoriesComponentItem } from "../Stories/types"
+import { PostDetails } from "../Post/types"
 
 /* const maxWidth = 375
 
